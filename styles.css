@@ -1,0 +1,477 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    /* display: flex;*/
+    /* justify-content: center; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+
+/* Hero section */
+.hero {
+    background-image: url('img/hotel.jpg');
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+    padding: 200px 20px; /* Adjust padding for better spacing */
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Adjust the font size as needed */
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #555;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.room {
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.room h3 {
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    border-left: 5px solid #333;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Booking Form */
+.booking-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.booking-form form {
+    display: grid;
+    gap: 15px;
+}
+
+.booking-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #555;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add this line */
+}
+
+/* Room Details Page */
+.room-details {
+    flex: 1 1 30%;
+    flex-direction: column;
+    width: 48%;
+    display: flex;
+    margin: 1em;
+}
+
+.room {
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.room h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.room p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.room .btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.room .btn:hover {
+    background-color: #555;
+}
+
+/* Gallery section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: calc((100% - 40px) / 3); /* Adjust this value for spacing and number of images per row */
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.testimonial-container {
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonial.active {
+    opacity: 1;
+}
+
+@keyframes rotateTestimonials {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25%, 75% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+/* Social media icons */
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Adjust the favicon size as needed */
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    /* Adjust header padding for smaller screens */
+    header {
+        /*padding: 10px 5px;*/
+        flex-direction: column;
+        text-align: center;
+      
+    }
+    .logo img {
+      	margin-bottom: 10px;
+    }
+
+    nav {
+        text-align: center;
+        /* width: 80%;
+        margin: 0 auto;*/
+    }
+
+    /* Center align the navigation links for smaller screens */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust padding for main content on smaller screens */
+    main {
+        padding: 10px;
+    }
+
+    /* Adjust padding for the hero section on smaller screens */
+    .hero {
+        padding: 150px 0;
+    }
+
+    /* Increase the width of the gallery images for smaller screens */
+    .gallery img {
+        width: calc((100% - 40px) / 3);
+        margin: 10px;
+    }
+
+    /* Adjust padding for the testimonial container on smaller screens */
+    .testimonial-container {
+        max-width: 400px;
+    }
+
+    /* Adjust padding for the room details section on smaller screens */
+    .room-details {
+        padding: 10px;
+    }
+
+    /* Increase the width of the room images for smaller screens */
+    .room img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Increase the width of the booking button for smaller screens */
+    .btn {
+        padding: 10px 20px;
+    }
+}
+

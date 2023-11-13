@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+      <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <!-- Navigation bar will go here -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Book</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Our Hotel. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </div>
+        <!-- Social media icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ourhotel" target="_blank"><img src="fav/fb.icons8.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/ourhotel" target="_blank"><img src="fav/x.icons8.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/ourhotel" target="_blank"><img src="fav/insta.icons8.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
