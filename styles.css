@@ -190,7 +190,7 @@ cite {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Add this line */
+    justify-content: space-between;
 }
 
 /* Room Details Page */
